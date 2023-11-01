@@ -16,22 +16,22 @@ How to build LineageOS
 
 * Initialize the repo:
 
-        repo init -u git://github.com/LineageOS/android.git -b lineage-20.0
+        repo init -u git://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
 
 * Create a local manifest:
 
-        vim .repo/local_manifests/roomservice.xml
+        mkdir .repo/local_manifests && nano .repo/local_manifests/roomservice.xml
 
         <?xml version="1.0" encoding="UTF-8"?>
         <manifest>
             <!-- SONY -->
-            <project name="whatawurst/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-20" />
-            <project name="whatawurst/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-20" />
-            <project name="whatawurst/android_device_sony_poplar" path="device/sony/poplar" remote="github" revision="lineage-20" />
+            <project name="whatawurst/android_kernel_sony_msm8998" path="kernel/sony/msm8998" revision="lineage-21" />
+            <project name="whatawurst/android_device_sony_yoshino-common" path="device/sony/yoshino-common" revision="lineage-21" />
+            <project name="whatawurst/android_device_sony_poplar" path="device/sony/poplar" revision="lineage-21" />
 
             <!-- blobs for poplar -->
-            <project name="whatawurst/android_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-20" />
-            <project name="whatawurst/android_vendor_sony_poplar" path="vendor/sony/poplar" remote="github" revision="lineage-20" />
+            <project name="whatawurst/android_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" revision="lineage-21" />
+            <project name="whatawurst/android_vendor_sony_poplar" path="vendor/sony/poplar" revision="lineage-21" />
         </manifest>
 
 * Sync the repo:
@@ -41,8 +41,8 @@ How to build LineageOS
 * Setup the environment
 
         source build/envsetup.sh
-        lunch lineage_poplar-userdebug
+        breakfast poplar
 
 * Build LineageOS
 
-        make -j8 bacon
+        m bacon

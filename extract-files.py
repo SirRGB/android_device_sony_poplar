@@ -14,6 +14,7 @@ from extract_utils.fixups_blob import (
 )
 
 namespace_imports = [
+    'hardware/qcom-caf/msm8998',
     'vendor/sony/yoshino-common',
 ]
 
@@ -54,7 +55,6 @@ module = ExtractUtilsModule(
     'poplar',
     'sony',
     blob_fixups=blob_fixups,
-    check_elf=False,
     namespace_imports=namespace_imports,
 )
 

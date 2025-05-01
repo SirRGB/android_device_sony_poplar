@@ -15,6 +15,7 @@ from extract_utils.fixups_blob import (
 
 namespace_imports = [
     'hardware/qcom-caf/msm8998',
+    'hardware/qcom-caf/wlan',
     'vendor/sony/yoshino-common',
 ]
 

@@ -229,10 +229,7 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 # DRM
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/lib/libwvhidl.so
-vendor/lib/libwvtee.so
 vendor/lib64/libwvhidl.so
-vendor/lib64/libwvtee.so
-vendor/lib64/mediadrm/libwvdrmengine.so
 
 # DRM_FIRMWARE
 vendor/firmware/tzwidevine.b00

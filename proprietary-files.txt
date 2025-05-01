@@ -5,9 +5,6 @@
 vendor/etc/acdbdata/Sony/Sony_yoshino_Handset_cal.acdb
 vendor/etc/acdbdata/Sony/Sony_yoshino_Speaker_cal.acdb
 vendor/lib/hw/audio.primary.msm8998.so
-vendor/lib/soundfx/libsonypostprocbundle.so
-vendor/lib/soundfx/libsonysweffect.so
-vendor/lib/soundfx/libznrwrapper.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -20,6 +17,9 @@ vendor/lib/librebuffering.so
 vendor/lib/libsmwrapper.so
 vendor/lib/libsonydseehxwrapper.so
 vendor/lib/libtinycompress_vendor.so
+vendor/lib/soundfx/libsonypostprocbundle.so
+vendor/lib/soundfx/libsonysweffect.so
+vendor/lib/soundfx/libznrwrapper.so
 
 # AUDIO_CONFIGS
 vendor/etc/audio_platform_info.xml
@@ -230,9 +230,9 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/lib/libwvhidl.so
 vendor/lib/libwvtee.so
-vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/libwvtee.so
+vendor/lib64/mediadrm/libwvdrmengine.so
 
 # DRM_FIRMWARE
 vendor/firmware/tzwidevine.b00
@@ -521,10 +521,10 @@ vendor/lib64/libStDrvInt.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # QTI_ANT
-vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # QTI_BLUETOOTH
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti

@@ -56,6 +56,7 @@ module = ExtractUtilsModule(
     'poplar',
     'sony',
     blob_fixups=blob_fixups,
+    check_elf=False,
     namespace_imports=namespace_imports,
 )
 
